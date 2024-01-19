@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/Home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body style="background-color: silver;">
+  <nav class="navbar navbar-expand-md shadow" style="background-color: white;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="../images/logo.png" alt="Gambar Logo Perusahaan" style="height: 100px; width: 130px;">
+        <div class="collapse navbar-collapse nav-tyo" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active rounded" href="Home.html" style="background-color: orange;">Home </a>
+            <a class="nav-link" href="Todos.html">Todos </a>
+            <a class="nav-link" href="Portofolio.html">Portofolio </a>
+            <a class="nav-link" href="Blog.html">Blog </a>
+            <a class="nav-link" href="Contact_Us.html">Contact Us </a>
+            <a class="nav-link" href="About_Us.html">About Us</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <div id="carouselExample" class="carousel slide"> 
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="../images/jumbo_tron1.jpg" class="d-block w-100 c-image" alt="gambar_orang_kerja_serius">
+          <div class="carousel-caption top-0" style="margin-top: 50px;">
+            <h1 class="display-1 fw-bold" style="color: #ffffff; font-size: 90px;">WELCOME TO OUR COMPANY</h1>
+            <p class="lead my-4" style="color: #ffffff; font-size: 35px;">CLick button below if you want to order</p>
+            <button class="btn btn-primary" onclick="togglePopup()">Order Now</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="../images/jumbo_tron2.jpg" class="d-block w-100 c-image" alt="gambar_orang_kerja_senyum">
+          <div class="carousel-caption top-0" style="margin-top: 120px;">
+          <h1 class="display-1 fw-bold" style="color: #ffffff; font-size: 90px;">WORK WITH US</h1>
+          <p class="lead my-4" style="color: #ffffff; font-size: 35px;"></p>
+          </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="../images/jumbo_tron3.jpg" class="d-block w-100 c-image" alt="gambar_orang_kerja_tepuk_tangan">
+        <div class="carousel-caption top-0" style="margin-top: 120px;">
+          <h1 class="display-1 fw-bold" style="color: #ffffff; font-size: 90px;">GROW WITH US</h1>
+          <p class="lead my-4" style="color: #ffffff; font-size: 35px;"></p>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content rounded justify-content-center align-items-center mt-5" style="height: 660px;">
+      <a class="close-btn" onclick="togglePopup()">&times;</a>
+      <table class="table table-bordered mt-5">
+        <thead class="table-primary">
+            <tr>
+                <th class="fs-4 align-baseline text-start">Plan Features</th>
+                <th class="fs-4 align-baseline text-center">Basic<br><span class="fs-6">$5/month</span></th>
+                <th class="fs-4 align-baseline text-center">Economy<br><span class="fs-6">$9/month</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Webspace</td>
+                <td class="text-center">Unlimited</td>
+                <td class="text-center">Unlimited</td>
+            </tr>
+            <tr>
+                <td>Bandwidth</td>
+                <td class="text-center">Unlimited</td>
+                <td class="text-center">Unlimited</td>
+            </tr>
+            <tr>
+                <td>25 GB Storage</td>
+                <td class="text-center"><i class="bi bi-x"></i></td>
+                <td class="text-center">Unlimited</td>
+            </tr>
+            <tr>
+                <td>iPhone App</td>
+                <td class="text-center"><i class="bi bi-x"></i></td>
+                <td class="text-center">Unlimited</td>
+            </tr>
+            <tr>
+                <td>Enchanced Security</td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td>Wordpress Support</td>
+                <td class="text-center"><i class="bi bi-x"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td>24/7 Support</td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td>Backups</td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td>Dedicated IP</td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+                <td class="text-center"><i class="bi bi-check"></i></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="text-center"><a class="btn btn-outline-primary btn-sm" href="#" role="button">Order Now</a></td>
+                <td class="text-center"><a class="btn btn-outline-primary btn-sm" href="#" role="button">Order Now</a></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </div>
+  
+  <div class="row">
+    <h3 class="tagline mt-4" style="text-align: center;">TAGLINE</h3>
+    <h5 class="mt-2" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h5>
+  </div>
+    
+  <div class="row pb-3">
+    <div class="col-md-3 col-md-3 d-flex justify-content-center align-items-center">
+      <div class="card h-90 mt-4 rounded align-items-center justify-content-center" style="width: 15rem;">
+      <img src="../images/komputer.jpg" class="align-items-center justify-content-center img-fluid pt-3" style="height: 100px; width: 100px;" alt="ini foto">
+      <div class="card-body">
+        <p class="card-text pt-3" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-3 d-flex justify-content-center align-items-center">
+      <div class="card h-90 mt-4 rounded align-items-center justify-content-center" style="width: 15rem;">
+      <img src="../images/web.jpg" class="align-items-center justify-content-center img-fluid pt-3" style="height: 100px; width: 100px;" alt="ini foto">
+      <div class="card-body">
+        <p class="card-text pt-3" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-3 d-flex justify-content-center align-items-center">
+      <div class="card h-90 mt-4 rounded align-items-center justify-content-center" style="width: 15rem;">
+      <img src="../images/graphic.jpg" class="align-items-center justify-content-center img-fluid pt-3" style="height: 100px; width: 100px;" alt="ini foto">
+      <div class="card-body">
+        <p class="card-text pt-3" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-md-3 d-flex justify-content-center align-items-center">
+      <div class="card h-90 mt-4 rounded align-items-center justify-content-center" style="width: 15rem;">
+      <img src="../images/click.jpg" class="align-items-center justify-content-center img-fluid pt-3" style="height: 100px; width: 100px;" alt="ini foto">
+      <div class="card-body">
+        <p class="card-text pt-3" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-expand-lg pt-4 pb-4" style="background-color: black; color: white; text-align: center;">
+    <p>Copyright &copy;2024 Designed by Nurakhmad Sustantyo</p>
+  </footer>
+
+  <script src="../javascript/Home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
